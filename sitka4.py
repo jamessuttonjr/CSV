@@ -6,11 +6,9 @@ from datetime import datetime
 open_file = open("death_valley_2018_simple.csv", "r")
 
 csv_file = csv.reader(open_file, delimiter=",")
-
 header_row = next(csv_file)
 
 print(type(header_row))
-
 for index, column_header in enumerate(header_row):
     print(index, column_header)
 
